@@ -1,0 +1,4 @@
+interface:
+  display_name: "我的介面設計"
+  short_description: "網頁與手機 App 的需求規劃、布局選擇、互動設計與驗證"
+  default_prompt: "使用 $personal-ui-design 分析這個介面的需求、平台與改善方向，先提出建議，不修改產品程式。"
