@@ -10,12 +10,12 @@
 | React Native／Expo | 現有導航動效、Reanimated、Gesture Handler；Expo 動畫 Skill 按需使用 | 跟手、拖曳、吸附、手勢與觸覺回饋 |
 | Kotlin／Compose | Compose 動畫與現有 Material 元件 | 狀態值、顯示隱藏、尺寸、頁面切換 |
 | SwiftUI | 系統元件、animation／transition 與目標版本可用 API | 狀態轉換、頁面與元件動畫 |
-| Web／PWA | CSS／WAAPI；較複雜 React 動效再評估 Motion | 進出場、布局、SVG、捲動與手勢 |
-| 跨平台的動畫插畫 | Lottie 或 Rive 的對應 runtime | 載入、成功圖示、引導、互動角色 |
+| Web／PWA | CSS／WAAPI；較複雜 React 動效再評估 Motion 開源 npm 套件 | 只用開源 API 與自行實作，不使用另購範例或外掛 |
+| 預製向量動畫 | 已確認免費的 Lottie runtime 與免費授權素材 | 素材取得與修改／匯出也要免費；不以播放器授權代替素材授權 |
 
 以上是選用方向，不保證某版本或平台已支援特定 API；實作時查官方文件與專案依賴。React DOM／CSS 程式不能直接當成 Flutter 或 React Native 原生程式。
 
-Lottie 適合預製動畫播放，仍需驗證素材功能在目標播放器的相容性。Rive 適合狀態機驅動的互動動畫，仍需動畫資產、runtime 與應用狀態對接。兩者不取代頁面導航或服務成功判定，也不預設素材製作可全自動。
+Lottie 適合預製動畫播放，仍需驗證素材授權與目標播放器相容性。找不到可免費取得與修改的動畫時，改用框架動畫或自行編寫 SVG。互動角色可用程式狀態機控制自有素材；不預設需要外部動畫編輯器，也不承諾全自動。動畫不取代頁面導航或服務成功判定。
 
 ## 把感覺寫成可實作規格
 

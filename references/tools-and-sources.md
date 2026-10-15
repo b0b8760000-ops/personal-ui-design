@@ -1,56 +1,47 @@
-# 工具選用與來源
+# 免費工具與來源
 
-這是選用地圖，不是已安裝清單。名稱、路徑、帳號連線、方案、功能旗標與 API 會變動；使用時檢查當下 Skill 目錄、工具與官方文件。不要把 2026-10-15 的查核快照當未來可用保證。
+本頁只收錄不需購買的指定版本／方法，不收錄付費推薦或試用方案。查核日期：2026-10-15。這是選用清單，不是安裝清單；本 Skill 可直接運作，不依賴所有候選工具。
 
-本 Skill 以自行整理的方法為主，不複製或內嵌第三方完整 Skill、執行檔或素材。需要其他 Skill 時讀取其現行原檔並遵循適用規範；不要複製舊命令或一併套用無關流程。
+## 免費判斷
 
-## 選用地圖
+- 查指定功能與版本，包括編輯、下載、匯出、去除浮水印與使用授權；不能只查首頁有沒有「Free」。
+- 開源授權只適用對應程式／文件，不自動包含同站的商業服務、生成 API、課程或動畫素材。依授權保留必要聲明；免費不等於沒有授權條件。
+- 不使用訂閱、購買、按量計費、限時試用、免費點數用完需付款或必須綁卡的路線；不要求先付款再退款。
+- 條件不明或原本免費功能改收費時，不採用。選框架內建功能、程式繪圖與自有素材作替代，不繞過存取限制。
+- 本機方案以已有硬體與環境為前提；需要購買設備、租主機或付費建置服務時，改交付可驗證範圍的程式、規格與本機原型，不宣稱完整裝置建置已完成。
 
-| 需求 | 候選 | 邊界 |
+## 免費選用清單
+
+| 需求 | 可選版本／方法 | 免費依據與適用邊界 |
 |---|---|---|
-| 通用介面分析與平台判斷 | 本 Skill 的共用、Web 與手機 App 參考 | 同一入口按需選模組，不重跑多套相同流程 |
-| 配色、字體、風格與設計規範 | ui-ux-pro-max | 有多框架指引；風格建議不能代替實際需求與驗證 |
-| 圖像式視覺探索 | Product Design ideate | 適合比較畫面方向；遵循當下數量與生成流程，不自動視為可編輯稿 |
-| 既有流程審查 | Product Design audit | 依截圖與操作證據；單一畫面不能證明完整資料流 |
-| 參考圖／URL 到前端原型 | Product Design image-to-code／url-to-code | 主要為 Web；套手機框不等於原生 App |
-| 點陣背景、插畫與透明裝飾 | imagegen；Creative Production produce | 前者製作素材，後者適合視覺方向探索；不把圖片當互動元件 |
-| Web 視覺與細節打磨 | Impeccable、Anthropic frontend-design | 排版、層級、色彩與有目的的動效；不能直接保證原生框架實作 |
-| React Native／Expo | Expo 官方 Skills | 按需選 native-ui、design-system、animation、router 等目前存在的 Skill |
-| Flutter | Flutter 官方 Agent Plugins | 響應式布局、修溢出、元件預覽與測試；偏工程落地 |
-| 原生 iOS | SwiftUI Expert Skill、Apple HIG | 前者為社群 Skill；API 與平台規範仍查 Apple 文件 |
-| React Web 動效 | Motion Skill／AI Kit | 核對免費與付費功能邊界；不用於替代 React Native runtime |
-| 展示／操作示意影片 | HyperFrames 系列 | 影片製作；App 內動效另行實作 |
+| 整體規劃、審查與交接 | 本 Skill 的共用／平台參考、Markdown、程式原型 | 不需外部設計服務；資料狀態與授權仍需驗證 |
+| 色彩、字體、元件規範 | [UI UX Pro Max 公開開源版本](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | [MIT](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/LICENSE)；只用儲存庫中的開源內容 |
+| Web 細節打磨 | [Impeccable 開源版本](https://github.com/pbakaus/impeccable) | [Apache-2.0](https://github.com/pbakaus/impeccable/blob/main/LICENSE)；使用本機流程，不引入外部計費能力 |
+| Flutter 布局與預覽 | [Flutter 官方 Agent Plugins](https://github.com/flutter/agent-plugins) | [BSD-3-Clause](https://github.com/flutter/agent-plugins/blob/main/LICENSE)；只選對應本機布局／預覽 Skill |
+| React Native／Expo | [Expo 官方 Skills](https://github.com/expo/skills) 的框架部分 | [MIT](https://github.com/expo/skills/blob/main/LICENSE)；限本機 SDK、導航、設計系統與動畫，不選雲端服務流程 |
+| 原生 iOS 指引 | [SwiftUI Expert Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill) | [MIT](https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/main/LICENSE)；既有 Apple 開發環境另核對，不承諾可在任意電腦零成本建置 |
+| Web 動效 | CSS／WAAPI；[Motion 開源 npm 套件](https://github.com/motiondivision/motion) | Motion 為 [MIT](https://github.com/motiondivision/motion/blob/main/LICENSE.md)；只用開源 API 與自行實作程式，不使用另購範例或外掛 |
+| React Native 手勢動效 | [Reanimated](https://github.com/software-mansion/react-native-reanimated)、[Gesture Handler](https://github.com/software-mansion/react-native-gesture-handler) | 兩者皆 [MIT](https://github.com/software-mansion/react-native-reanimated/blob/main/LICENSE)／[MIT](https://github.com/software-mansion/react-native-gesture-handler/blob/main/LICENSE)；驗證專案版本與目標裝置 |
+| 預製向量動畫播放 | [Lottie Android 開源播放器](https://github.com/airbnb/lottie-android) | [Apache-2.0](https://github.com/airbnb/lottie-android/blob/master/LICENSE)；播放器免費不代表素材免費；其他平台 runtime 另查維護者授權 |
+| 可編輯設計稿 | 程式原型；必要時 [Penpot 開源自架版本](https://github.com/penpot/penpot) | [MPL-2.0](https://github.com/penpot/penpot/blob/develop/LICENSE)；僅用已有環境本機執行，不租主機，不強制安裝 |
+| 背景、圖示與簡單插畫 | 框架繪圖、CSS、SVG、Canvas、系統字體 | 自行寫程式，不需購買素材；外部素材與字體逐份核對授權 |
 
-## Figma 選用路線
+需要其他 Skill 時先核對目前清單並讀取原檔；本頁不複製第三方完整 Skill 或提供固定安裝命令。外部 Skill 要求訂閱、購買或使用計費端點時，不適用本免費流程。沒有該 Skill 也可依本 Skill 的方法完成工作。
 
-僅在需要可編輯設計稿、元件／變數或設計交接時選用；本 Skill 不依賴 Figma。先確認實際連線、檔案權限與可用工具。
+## Designeer 只作免費發現入口
 
-- 建立新檔：先讀 figma-create-new-file。
-- 操作設計畫面：讀 figma-use；從程式轉畫面時另讀 figma-generate-design。
-- 共用規範／元件庫：讀 figma-generate-library 與其要求的基礎 Skill，僅建立需求範圍。
-- 設計到程式：先讀 figma-design-to-code；元件對映按需讀 figma-code-connect。
-- 設計工具內動畫：讀 figma-use-motion 與 figma-use；旗標不支援時依該 Skill 停止相關嘗試，改提供動效規格或框架方案，不繞過限制。
-- Figma 動畫到應用程式：讀 figma-implement-motion。時間軸、節點資料與應用狀態需對應；不能直接把輸出的 CSS 當成原生實作。
-- 程序背景／效果：需要操作 Figma shader 時先讀 figma-shaders；Figma 內效果另需確認能否在目標 App 取得或重現。
-- SwiftUI 雙向交接時按需讀 figma-swiftui。
+[Designeer](https://www.designeer.xyz/) 的目錄目前可免費瀏覽；只用來發現參考，不將其中任何工具、課程、模板、圖片或動畫自動列入免費清單。對候選的實際功能、匯出與素材授權另查原作者來源；不能確認就略過。站內的贊助項目與排名不作免費或相容性的證據。
 
-這些是 Skill 名稱定位，並非可直接執行的命令。找不到或工具未開放時明確說明，只繼續不依賴該能力的工作。自行寫程式不需要強制繞經 Figma。
+用法：依需求找「App 流程／背景／元件／動效」→ 選少量候選 → 查原作者文件與授權 → 確認零新增費用與平台相容 → 再設計或實作。不要整站匯入，也不自動串接或安裝網站描述的工具。
 
-## 官方與原作者來源
+## 免費官方文件
 
-依當次問題查對應來源，不預設全部開啟；不固定套件版本、價格、數量或安裝命令。
+以下只閱讀公開文件，不使用其付費產品、上架、託管或雲端建置服務。
 
-- [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)：設計規範與框架指引。
-- [Impeccable](https://github.com/pbakaus/impeccable)：視覺審查、打磨與動效工作流程。
-- [Anthropic frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design)：視覺方向與前端設計。
-- [Expo Skills](https://github.com/expo/skills)：原生 UI、設計系統、導航與動畫。
-- [Flutter Agent Plugins](https://github.com/flutter/agent-plugins)／[AI 開發設定](https://docs.flutter.dev/ai/get-started)：官方工具與 Skill。
-- [Flutter 動畫](https://docs.flutter.dev/ui/animations)：框架動畫選型。
-- [SwiftUI Expert Skill](https://github.com/AvdLee/SwiftUI-Agent-Skill)：社群 SwiftUI 指引。
-- [Apple 設計原則](https://developer.apple.com/design/human-interface-guidelines/design-principles/)／[動效](https://developer.apple.com/design/human-interface-guidelines/motion)：平台體驗與動效。
-- [Android Material 元件](https://developer.android.com/design/ui/mobile/guides/components/material-overview)／[Compose 動畫](https://developer.android.com/develop/ui/compose/animation/introduction)：Android 平台實作。
-- [Reanimated](https://docs.swmansion.com/react-native-reanimated/)／[Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/)：React Native 動畫與手勢。
-- [Motion](https://motion.dev/docs/react)：Web 動效、Skill 與方案界線。
-- [Lottie](https://github.com/airbnb/lottie-android)：播放器與支援範圍；Flutter 等 runtime 另外查對應維護者。
-- [Rive](https://rive.app/docs)：狀態機、素材與各平台 runtime。
-- [Figma 開發者文件](https://developers.figma.com/)：工具整合；特殊功能需另核對本環境 Skill 與權限。
+- [Flutter 動畫](https://docs.flutter.dev/ui/animations)：本機框架動畫選型。
+- [Apple 設計原則](https://developer.apple.com/design/human-interface-guidelines/design-principles/)／[動效](https://developer.apple.com/design/human-interface-guidelines/motion)：平台體驗與動效規範。
+- [Android Material 元件](https://developer.android.com/design/ui/mobile/guides/components/material-overview)／[Compose 動畫](https://developer.android.com/develop/ui/compose/animation/introduction)：Android 介面與動畫。
+- [Reanimated 文件](https://docs.swmansion.com/react-native-reanimated/)／[Gesture Handler 文件](https://docs.swmansion.com/react-native-gesture-handler/)：開源套件使用方式。
+- [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)／[SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)：程式背景與向量素材。
+
+指定軟體、工具功能或授權可能變動，使用時仍核對當下來源；以上查核不代表已在使用者專案實測。
